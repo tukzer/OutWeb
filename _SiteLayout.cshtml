@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@Page.Title - My ASP.NET Web Page</title>
+        <link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <script src="~/Content/Scripts/jquery-1.6.2.min.js"></script>
+        <script src="~/Content/Scripts/jquery-ui-1.8.11.js"></script>
+        <script src="~/Content/Scripts/modernizr-2.0.6-development-only.js"></script>
+        <meta name="viewport" content="width=device-width" />
+        <script type="text/javascript">
+            jQuery(document).ready(function(){
+	            // 找到所有菜单, 并添加显示和隐藏菜单事件
+	            jQuery('ul#menu > li').each(function(){
+		            jQuery(this).hover(
+ 
+			            // 显示菜单
+			            function(){
+				            jQuery(this).find('ul:eq(0)').show();
+			            },
+ 
+			            // 隐藏菜单
+			            function(){
+				            jQuery(this).find('ul:eq(0)').hide();
+			            }
+ 
+		            );
+	            });
+            });
+ </script>
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <!--<p class="site-title"><a href="~/">宝信基础能源管理平台</a></p>-->
+                    <img style="margin: 20px 0;" src="/images/logo.png" alt="宝信基础能源管理平台"/>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        @if (WebSecurity.IsAuthenticated) {
+                            <p>
+                                欢迎您, <a class="username" href="~/Account/ChangePassword" title="Change password">@WebSecurity.CurrentUserName</a>!
+                                <a href="~/Account/Logout">注销</a>
+                            </p>
+                        } else {
+                            <ul>
+                                <li><a href="~/Account/Register">注册</a></li>
+                                <li><a href="~/Account/Login">登录</a></li>
+                            </ul>
+                        }
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li>
+                                <a href="~/">首页</a>
+                            </li>
+                            <li>
+                                <a href="~/Products">产品资料</a>
+                                <ul style="display: none;">
+                                    <li><a href="#">产品介绍</a></li>
+                                    <li><a href="#">报价信息</a></li>
+                                    <li><a href="#">最新资料</a></li>
+                                    <li><a href="#">产品下载</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="~/Customers">客户中心</a>
+                                <ul style="display: none;">
+                                    <li><a href="#">客户登记</a></li>
+                                    <li><a href="#">反馈中心</a></li>
+                                    <li><a href="#">产品试用</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="~/About">关于我们</a>
+                                <ul style="display: none;">
+                                    <li><a href="#">团队介绍</a></li>
+                                    <li><a href="#">发展历程</a></li>
+                                    <li><a href="#">公司信息</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="~/Contact">联系我们</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - 宝信软件</p>
+                </div>
+                <div class="float-right">
+                    <ul id="social">
+                        <li><a href="http://facebook.com" class="facebook">Facebook</a></li>
+                        <li><a href="http://twitter.com" class="twitter">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        @RenderSection("Scripts", required: false)
+    </body>
+</html>

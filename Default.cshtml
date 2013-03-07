@@ -1,0 +1,96 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "宝信基础能源管理系统";
+}
+
+
+
+@section featured {
+<section class="featured">
+    <script type="text/javascript" src="~/Content/Scripts/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /* Dots Slider 1 */
+            $(function() {
+                $('#imageSlider').after('<div id="imageSliderNav">').cycle({
+                    fx: 'fade', speed: 1050, timeout: 8000, pager: '#imageSliderNav'
+                });
+            });
+        });
+    </script>
+    <div class="content-wrapper">
+        <div id="slider">
+          <div id="imageSlider" style="position: relative; width: 933px; height: 374px; ">
+          <div class="imageSlide" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 4; opacity: 0; width: 933px; height: 374px; ">
+              <div class="imageSliderInfo">
+                  <h2>更直观更努力<br>只为您的快捷和便利 </h2>
+                    <p>提供一系列数据推送、自动计算功能，提供所见即所得的报表修改。每天，您的数据都会以各种图表、仪表盘、主明细等多种方式详细展示...</p>
+                    <a class="ui-btn ui-btn-big" href="#">查看更多?</a>
+                </div>
+              <div class="imageSliderImage">
+                  <img src="/images/tmp_img.jpg" width="500" height="320" alt="photo is lost">
+                </div>
+            </div>
+          <div class="imageSlide" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 4; opacity: 0; width: 933px; height: 374px; ">
+              <div class="imageSliderInfo">
+                  <h2>全面而又丰富 <br>让您爱上它!</h2>
+                    <p>您可以在运行时，选择不同的计量点、项目算法，也可以动态的增加计量点、工序、能介等各种概念。您甚至可以简单的定制报表甚至是画面，准备好了吗..</p>
+                    <a class="/images/ui-btn ui-btn-big" href="#">查看更多</a>
+                </div>
+              <div class="imageSliderImage">
+                  <img src="/images/tmp_img2.jpg" width="500" height="320" alt="photo is lost">
+                </div>
+            </div>
+          <div class="imageSlide" style="position: absolute; top: 0px; left: 0px; display: block; z-index: 5; opacity: 1; width: 933px; height: 374px; ">
+              <div class="imageSliderInfo">
+                  <h2>更好的性能和交互<br>数据不再枯燥</h2>
+                    <p>最高2万个计量点设计的数据架构，实现更大数据吞吐量；后台静默数据计算，无时无刻不在运转，你却无法感知；优化的归档策略，自动处理历史数据，减少数据库负载...</p>
+                    <a class="ui-btn ui-btn-big" href="#">查看更多</a>
+                </div>
+              <div class="imageSliderImage">
+                  <img src="/images/12.png" width="500" height="320" alt="photo is lost">
+                </div>
+            </div>
+          <div class="imageSlide" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 4; opacity: 0; width: 933px; height: 374px; ">
+              <div class="imageSliderInfo">
+                  <h2>更少花费更易运维<br>让IT转向双赢</h2>
+                    <p>多样化的运行环境，使用DB2及LINUX Server等软硬组件能够有效的降低成本。可选的组件，按需装配，只选你需要的。更简单的运维，减少人力和时间消耗；7*24小时远程支持加上现场支撑，接触您的后顾之忧...</p>
+                    <a class="ui-btn ui-btn-big" href="#">查看更多</a>
+                </div>
+              <div class="imageSliderImage">
+                  <img src="/images/13.png" width="500" height="320" alt="photo is lost">
+                </div>
+            </div>
+        </div>
+            <!--
+            <div id="imageSliderNav">
+                <a href="#" class="">1</a>
+                <a href="#" class="">2</a>
+                <a href="#" class="activeSlide">3</a>
+                <a href="#" class="">4</a>
+            </div>
+            -->
+        </div>
+    </div>
+</section>
+}
+
+<h3>We suggest the following:</h3>
+
+<ol class="round">
+    <li class="one">
+        <h5>Getting Started</h5>
+        ASP.NET Web Pages and the new Razor syntax provide a fast, approachable, and lightweight way to combine server code with HTML to create dynamic web content. Connect to databases, add video, link to social networking sites, and include many more features that let you create beautiful sites using the latest web standards.
+        <a href="http://go.microsoft.com/fwlink/?LinkId=245139">Learn more</a></li>
+    
+    <li class="two">
+        <h5>Add NuGet packages and jump start your coding</h5>
+        NuGet makes it easy to install and update free libraries<a href="http://go.microsoft.com/fwlink/?LinkId=245140">Learn more</a>
+        </li>
+    <li class="three">
+        <h5>Find Web Hosting</h5>
+        You can easily find a web hosting company that offers the right mix of features and price for your applications. 
+        Visit <a href="http://microsoft.com/web/hosting" title="Microsoft/Web Website">Microsoft.com/web</a> to 
+        explore offerings from many providers.<a href="http://go.microsoft.com/fwlink/?LinkId=245143">Learn more</a>
+    </li>
+</ol>
