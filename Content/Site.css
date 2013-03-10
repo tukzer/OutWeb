@@ -1,5 +1,5 @@
 ﻿html {
-    background-color: #e2e2e2;
+    /*background-color: #e2e2e2;*/
     margin: 0;
     padding: 0;
 }
@@ -99,6 +99,8 @@ h5, h6 {
 
 .mainheader{
    background-image: url("../Images/bg-header.gif");
+    max-width: 1040px;
+    margin: 0 auto;
    height: 100px;
 }
 
@@ -107,6 +109,8 @@ h5, h6 {
     clear: both;
     padding-bottom: 35px;
     background-image: url("../Images/bg-featured.gif");
+    max-width: 1040px;
+    margin: 0 auto;
 }
 
     .main-content {
@@ -125,6 +129,9 @@ h5, h6 {
 }*/
 
 footer {
+    max-width: 1040px;
+    margin: 0 auto;
+    
     clear: both;
     background-color: #e2e2e2;
     font-size: .8em;
@@ -218,7 +225,7 @@ footer {
 }
 
     #login a {
-        background-color: #d3dce0;
+        /*background-color: #d3dce0;*/
         margin-left: 10px;
         margin-right: 3px;
         padding: 2px 3px;

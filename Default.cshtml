@@ -3,7 +3,34 @@
     Page.Title = "宝信基础能源管理系统";
 }
 
+<link href="~/Content/SpryTabbedPanels.css" type="text/css" rel="stylesheet">
+<script src="/Content/Scripts/SpryTabbedPanels.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+	var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
+function MM_swapImgRestore() { //v3.0
+	var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+	var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+	d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+	var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
 
 @section featured {
 <section class="featured">
@@ -15,6 +42,7 @@
                 $('#imageSlider').after('<div id="imageSliderNav">').cycle({
                     fx: 'fade', speed: 1050, timeout: 8000, pager: '#imageSliderNav'
                 });
+                MM_preloadImages('/baosight_portalHTML/images/nav_1_hover.jpg','/baosight_portalHTML/images/nav_2_hover.jpg','/baosight_portalHTML/images/nav_3_hover.jpg','/baosight_portalHTML/images/nav_4_hover.jpg')
             });
         });
     </script>
@@ -75,6 +103,7 @@
 </section>
 }
 
+<!--
 <h3>We suggest the following:</h3>
 
 <ol class="round">
@@ -94,3 +123,163 @@
         explore offerings from many providers.<a href="http://go.microsoft.com/fwlink/?LinkId=245143">Learn more</a>
     </li>
 </ol>
+-->
+<ul id="left">
+	<li>
+		<a href="http://icloud.baosight.com" target="_blank">
+        <img src="images/link_1.jpg" width="232" height="68" border="0">
+		</a>
+	</li>
+	<li>
+		<a href="http://www.baosight.com/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=162&amp;nodeId=11" target="_blank">
+            <img src="/images/link_2.jpg" width="232" height="76" border="0">
+		</a>
+	</li>
+</ul>
+<div id="middle">
+	<div class="TabbedPanels" id="TabbedPanels1">
+		<ul class="TabbedPanelsTabGroup">
+			<li onclick="javascript:window.location.href='/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=7&amp;nodeId=8'" tabindex="0" class="TabbedPanelsTab">
+				<span style="font-size:14px;">解决方案</span>
+			</li>
+			<li onclick="javascript:window.location.href='/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=23&amp;nodeId=24'" tabindex="0" class="TabbedPanelsTab TabbedPanelsTabSelected">
+				<span style="font-size:14px;">服务</span>
+			</li>
+			<li onclick="javascript:window.location.href='http://products.baosight.com'" tabindex="0" class="TabbedPanelsTab">
+				<span style="font-size:14px;">产品</span>
+			</li>
+		</ul>
+		<div class="TabbedPanelsContentGroup">
+			<div class="TabbedPanelsContent" style="display: none;">
+				<ul class="block">
+									<li>
+										<a href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=126&amp;nodeId=10"><span style="color:#03f;">制造执行系统：</span>敏捷制造、精益生产首选产品</a>
+									</li>
+									<li>
+										<a href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=130&amp;nodeId=10"><span style="color:#03f;">能源管控中心：</span>实现绿色制造的睿智选择</a>
+									</li>
+									<li>
+										<a href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=41&amp;nodeId=45"><span style="color:#03f;">采购供应链系统：</span>集团一体化采购信息平台</a>
+									</li>
+									<li>
+										<a href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=139&amp;nodeId=9"><span style="color:#03f;">智能建筑：</span>智能化构筑社会美好未来</a>
+									</li>
+									<div class="more">
+										<a href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=7&amp;nodeId=8">+ more</a>
+									</div>
+								</ul>
+			</div>
+			<div class="TabbedPanelsContent TabbedPanelsContentVisible" style="display: block;">
+				<ul class="block">
+									<li>
+										<a href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=23&amp;nodeId=24"><span style="color:#03f;">独特的四级技术支持体系</span></a>
+									</li>
+									<li>
+										<a href="/baosight_portal/portal2/mana/view_nodes.jsp?catalogId=default&amp;nodeId=50"><span style="color:#03f;">全面的信息化外包服务</span></a>
+									</li>
+									<li>
+										<a href="/baosight_portal/portal2/mana/view_nodes.jsp?catalogId=default&amp;nodeId=50"><span style="color:#03f;">专业的信息化技术服务</span></a>
+									</li>
+									<li>
+										<a href="/baosight_portal/portal2/mana/view_nodes.jsp?catalogId=default&amp;nodeId=30"><span style="color:#03f;">BOO、灾难恢复等新兴集成服务</span></a>
+									</li>
+									<div class="more">
+										<a href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=23&amp;nodeId=24">+ more</a>
+									</div>
+								</ul>
+			</div>
+			<div class="TabbedPanelsContent" style="display: none;">
+				<ul class="block">
+					<li>
+						<a href="http://10.25.199.62:8080/SupportCenter/content/icv/index.html"><span style="color:#03f;">iCentroView：</span>一体化监控的有力工具</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://support.baosight.com/"><span style="color:#03f;">网络巡警eCop：</span>内网安全管理专家</a>
+					</li>
+					<li>
+						<a href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=52&amp;nodeId=49"><span style="color:#03f;">全氢罩式炉：</span>带钢、线材退火的最佳性价比选择</a>
+					</li>
+					<li>
+						<a href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=123&amp;nodeId=49"><span style="color:#03f;">标记装置SteelKiss：</span>冶金行业标记专家</a>
+					</li>
+					<div class="more">
+						<a href="http://products.baosight.com">+ more</a>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="right">
+	<h1>最新动态<span><a href="/baosight_portal/portal2/mana/view_nodes.jsp?catalogId=default&amp;nodeId=7">+ more</a></span></h1>					
+    <marquee onmouseout="start()" onmouseover="stop()" scrollamount="2" direction="up">
+	    <ul>
+		
+		<li>
+		<a target="_blank" href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=478&amp;nodeId=7" style="text-decoration:none;">
+		<span style="width:230px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;cursor:pointer;" class="news">宝信软件多举措力推产品战略</span><span style="width:28px"><img style="border:0;" src="http://www.baosight.com/baosight_portalHTML/images/topnew.gif"></span><span style="width:50px;*margin-top:-25px" class="date">[03-06]</span>
+		</a>
+		</li>
+		
+		<li>
+		<a target="_blank" href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=476&amp;nodeId=22" style="text-decoration:none;">
+		<span style="width:230px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;cursor:pointer;" class="news">宝信软件参加上海软件行业协会企业合作沙龙</span><span style="width:28px">&nbsp;&nbsp;</span><span style="width:50px;*margin-top:-25px" class="date">[02-28]</span>
+		</a>
+		</li>
+		
+		<li>
+		<a target="_blank" href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=474&amp;nodeId=7" style="text-decoration:none;">
+		<span style="width:230px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;cursor:pointer;" class="news">上海地铁检修施工管理系统项目第一阶段成功上线</span><span style="width:28px">&nbsp;&nbsp;</span><span style="width:50px;*margin-top:-25px" class="date">[01-22]</span>
+		</a>
+		</li>
+		
+		<li>
+		<a target="_blank" href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=473&amp;nodeId=7" style="text-decoration:none;">
+		<span style="width:230px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;cursor:pointer;" class="news">工信部财政部物联网调研座谈会在宝信软件举行</span><span style="width:28px">&nbsp;&nbsp;</span><span style="width:50px;*margin-top:-25px" class="date">[01-22]</span>
+		</a>
+		</li>
+		
+		<li>
+		<a target="_blank" href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=472&amp;nodeId=7" style="text-decoration:none;">
+		<span style="width:230px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;cursor:pointer;" class="news">“宝信企业信息化平台软件”被列入国家重点新产品计划</span><span style="width:28px">&nbsp;&nbsp;</span><span style="width:50px;*margin-top:-25px" class="date">[01-21]</span>
+		</a>
+		</li>
+		
+		<li>
+		<a target="_blank" href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=471&amp;nodeId=7" style="text-decoration:none;">
+		<span style="width:230px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;cursor:pointer;" class="news">“应用系统资源管理装置”获浦东新区发明专利专项资助</span><span style="width:28px">&nbsp;&nbsp;</span><span style="width:50px;*margin-top:-25px" class="date">[01-21]</span>
+		</a>
+		</li>
+		
+		<li>
+		<a target="_blank" href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=470&amp;nodeId=22" style="text-decoration:none;">
+		<span style="width:230px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;cursor:pointer;" class="news">宝信软件参加第三届中国智慧能源高峰会议</span><span style="width:28px">&nbsp;&nbsp;</span><span style="width:50px;*margin-top:-25px" class="date">[01-21]</span>
+		</a>
+		</li>
+		
+		<li>
+		<a target="_blank" href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=469&amp;nodeId=7" style="text-decoration:none;">
+		<span style="width:230px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;cursor:pointer;" class="news">华鑫电气信息化实施项目需求确认评审会成功召开</span><span style="width:28px">&nbsp;&nbsp;</span><span style="width:50px;*margin-top:-25px" class="date">[01-11]</span>
+		</a>
+		</li>
+		
+		<li>
+		<a target="_blank" href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=468&amp;nodeId=7" style="text-decoration:none;">
+		<span style="width:230px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;cursor:pointer;" class="news">宝信软件成功中标上海中心大厦楼宇设备自控及能源计量系统专业工程</span><span style="width:28px">&nbsp;&nbsp;</span><span style="width:50px;*margin-top:-25px" class="date">[01-09]</span>
+		</a>
+		</li>
+		
+		<li>
+		<a target="_blank" href="/baosight_portal/portal2/mana/view_news.jsp?catalogId=default&amp;id=467&amp;nodeId=7" style="text-decoration:none;">
+		<span style="width:230px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;cursor:pointer;" class="news">公司连续中标申通地铁两个创新性项目</span><span style="width:28px">&nbsp;&nbsp;</span><span style="width:50px;*margin-top:-25px" class="date">[12-31]</span>
+		</a>
+		</li>
+		
+	</ul>
+    </marquee>  
+    <script type="text/javascript">
+    <!--
+    var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+    //-->
+    </script>
+</div>

@@ -1,0 +1,231 @@
+
+@charset "UTF-8";
+#left {
+    margin: 0px;
+    padding: 0px;
+    font-family: "宋体";
+    font-size: 14px;
+    text-decoration: none;
+    list-style-type: none;
+    
+	width: 232px;
+	float: left;
+}
+#left li {
+	padding-bottom: 5px;
+}
+#middle {
+    margin: 0px;
+    padding: 0px;
+    font-family: "宋体";
+    font-size: 14px;
+    text-decoration: none;
+    list-style-type: none;
+    
+    float: left;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 305px;
+    display: block;
+    
+}
+
+#middle .block {
+    margin: 0px;
+    padding: 0px;
+    font-family: "宋体";
+    font-size: 14px;
+    text-decoration: none;
+    list-style-type: none;
+    
+	clear: both;
+	height: 140px;
+	position: relative;
+}
+
+#middle .block li {
+	background-image: url(../images/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: left 9px;
+	padding-left: 12px;
+	width: 290px;
+	overflow: hidden;
+	height: 24px;
+	line-height: 24px;
+}
+#middle .block li a {
+	color: #3a3a3a;
+}
+
+#middle .block li a span {
+	color: #0c5da3;
+	font-weight: bold;
+}
+#middle .block .more {
+	color: #2d4c7f;
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	right: 20px;
+	bottom: 5px;
+}
+
+#right {
+    float: left;
+    width: 330px;
+    display: block;
+}
+
+#right ul{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+#right h1 {
+    margin: 0px;
+    padding: 0px;
+    font-family: "宋体";
+    font-size: 14px;
+    text-decoration: none;
+    list-style-type: none;
+    
+    background-image: url(../Images/news_tit_bg.gif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #175eaa;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+#right h1 span a {
+    color: #2d4c7f;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+
+#right li {
+	background-image: url(../images/arrow_2.gif);
+	background-repeat: no-repeat;
+	background-position: 2px center;
+	padding-left: 10px;
+	line-height: 24px;
+	height: 24px;
+	font-size: 14px;
+    margin: 1px;
+    list-style-type: none;
+}
+#right li a {
+	color: #03F;
+	text-decoration: underline;
+    margin: 0px;
+    padding: 0px;
+}
+#right marquee {
+	height: 145px;
+	width: 330px;
+}
+
+.news {
+	float: left;
+	width: 250px;
+	height: 22px;
+	overflow: hidden;
+}
+.date {
+	float: right;
+	width: 50px;
+}
+
+.TabbedPanels {
+    clear: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.TabbedPanelsTabGroup {
+    /*
+      background-image: url("../Images/bg-featured.gif");
+      background-repeat: repeat-x;*/
+    background-image: url("../Images/solution_tit_bg.gif");
+    background-repeat: no-repeat;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+}
+.TabbedPanelsTab {
+    -moz-user-select: none;
+    background-image: url("../Images/solution_bg.jpg");
+    background-repeat: no-repeat;
+    color: #333333;
+    cursor: pointer;
+    float: left;
+    font-size: 13px;
+    height: 22px;
+    line-height: 22px;
+    list-style: none outside none;
+    position: relative;
+    text-align: center;
+    top: 1px;
+    width: 76px;
+}
+.TabbedPanelsTabHover {
+    background-image: url("../Images/solution_bg_hover.jpg");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-weight: 700;
+    height: 22px;
+    width: 76px;
+}
+.TabbedPanelsTabSelected {
+    background-image: url("../Images/solution_bg_hover.jpg");
+    color: #FFFFFF;
+    font-weight: 700;
+    height: 22px;
+    width: 76px;
+}
+.TabbedPanelsTab a {
+    text-decoration: none;
+}
+.TabbedPanelsContentGroup {
+    clear: both;
+}
+.TabbedPanelsContent {
+    padding-left: 4px;
+    padding-top: 12px;
+}
+.TabbedPanelsContentVisible {
+}
+.VTabbedPanels .TabbedPanelsTabGroup {
+    background-color: #EEEEEE;
+    border-color: #999999 #999999 #CCCCCC #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    height: 20em;
+    position: relative;
+    width: 10em;
+}
+.VTabbedPanels .TabbedPanelsTab {
+    border-left: medium none;
+    border-right: medium none;
+    border-top: medium none;
+    float: none;
+    margin: 0;
+}
+.VTabbedPanels .TabbedPanelsTabSelected {
+    background-color: #EEEEEE;
+    border-bottom: 1px solid #999999;
+}
+.VTabbedPanels .TabbedPanelsContentGroup {
+    clear: none;
+    float: left;
+    height: 20em;
+    padding: 0;
+    width: 30em;
+}
